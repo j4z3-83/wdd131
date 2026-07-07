@@ -5,7 +5,7 @@ const list = document.querySelector("#list");
 // wait for button clicks
 button.addEventListener("click", function () {
 	// Check if the user entered something
-	if (input.value != "") {
+	if (input.value != "" && list.length != 10) {
 		// create list item and give it the value of the input
 		const li = document.createElement("li");
 		li.textContent = input.value;
