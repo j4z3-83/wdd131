@@ -24,7 +24,7 @@ button.addEventListener("click", function () {
 		input.value = "";
 	}
     if(list.length == 10){
-        document.getElementsByName("button").disabled = true;
+        document.getElementsById("button").disabled = true;
     }
 	input.focus();
 
