@@ -23,6 +23,9 @@ button.addEventListener("click", function () {
 		list.appendChild(li);
 		// clear the user input field
 		input.value = "";
+        if (list.length == 10){
+            document.getElementById("button").disabled = true;
+        }
 	}
 	// focus the user back to the input field
 	input.focus();
