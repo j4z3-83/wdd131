@@ -1,29 +1,30 @@
-const input = document.querySelector('favchap');
-const button = document.querySelector('button');
-const list = document.querySelector('list');
+const input = document.querySelector("#favchap");
+const button = document.querySelector("button");
+const list = document.querySelector("#list");
 
-//add input value to the list
-button.addEventListener('click', function(){
-    //check if user entered something into input box
-    if (input.value != '') {
-        //create the list item
-        const li = document.createElement('li');
-        li.textContent = input.Value;
-        // create a delete button and add click event
-        const delButton = document.createElement('button');
-        delButton.textContent = '❌';
-        delButton.addEventListener('click', function(){
-            list.removeChild(li);
-            input.focus();
-        });
-        //add the delete button to the list
-        li.append(delButton);
-        // display the complete list item to the list
-        list.appendChild(li);
-        input.value = '';
-    }
-    input.focus();
-})
+// handle button clicks
+button.addEventListener("click", function () {
+	// Check if the user entered something in input box
+	if (input.value != "") {
+		// take value from input box and make a list item
+		const li = document.createElement("li");
+		li.textContent = input.value;
+		// create a delete button and add a click event listener
+		const deleteBtn = document.createElement("button");
+		deleteButton.textContent = "❌";
+		deleteButton.addEventListener("click", function () {
+			list.removeChild(li);
+			input.focus();
+		});
+		// add the delete button to the list item
+		li.appendChild(deleteButton);
+		// add and display the completed list item in the list
+		list.appendChild(li);
+		// clear the input box
+		input.value = "";
+	}
+	input.focus();
+});
 
 
 
