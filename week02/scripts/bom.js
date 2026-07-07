@@ -6,10 +6,10 @@ const list = document.querySelector("#list");
 button.addEventListener("click", function () {
 	// Check if the user entered something
 	if (input.value != "") {
-    	// create list item
+		// create list item and give it the value of the input
 		const li = document.createElement("li");
 		li.textContent = input.value;
-		// create a button 
+		// create a button and add a click event listener
 		const deleteBtn = document.createElement("button");
 		delButton.textContent = "❌";
 		delButton.addEventListener("click", function () {
@@ -18,13 +18,12 @@ button.addEventListener("click", function () {
 		});
 		// add the button to the list item
 		li.appendChild(delButton);
-		// add the list item to the list
-		list.appendChild(li);
+		// display the list item in the list
 		// clear the user input box
+		input.value = "";
 	}
 	input.focus();
 });
-
 
 
 
