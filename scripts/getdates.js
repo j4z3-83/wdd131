@@ -1,10 +1,10 @@
 // elements for outputs
 const full = document.querySelector("#lastModified");
-const currentyear = document.querySelector("#currentyear");
+const currentYear = document.querySelector("#currentYear");
 const today = new Date();
 
 // outputs
-currentyear.innerHTML = `&copy; ${today.getFullYear()}`;
+currentYear.innerHTML = `&copy; ${today.getFullYear()}`;
 
 lastModified.innerHTML = `Last Modified:  
 ${new Intl.DateTimeFormat("en-US", {dateStyle: "full"}).format(today)}`;

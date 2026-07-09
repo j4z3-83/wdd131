@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", arial, sans-serif;
+}
+
+header, main, footer{
+    max-width: 800px;
+    margin: 0rem auto;
+    padding: .5rem;
+
+}
+/*header start*/
+header{
+    background-color: purple;
+    font-family: "Nunito", arial, sans-serif;
+    position: relative;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, .1);
+
+}
+
+#page-title{
+    font-size: 2rem;
+    font-weight: 500;
+    align-self: center;
+    color: white;
+}
+
+nav{
+    background-color: purple;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* small view navigation */
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: white;
+ 	position: absolute;
+    right: 0;
+    padding-right: 10px;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❎";
+}
+
+nav ul{
+    align-items: center;
+    justify-content: right;
+    list-style-type: none;
+}
+
+nav a{
+display: none;
+padding: .5rem;
+text-align: center;
+text-decoration: none;
+color: white;
+font-weight: 700;
+}
+
+a:hover{
+    color: green;
+    font-size: 1.5rem;
+}
+
+.open a {
+	display: block;
+}
+/*header end*/
+
+/*main start*/
+main{
+    padding: 1rem 1rem 2rem 1rem;
+    background-color: rgba(128, 0, 128, .2);
+}
+h1{
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.images{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    text-align: center;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+/*main end*/
+
+/*footer start*/
+footer{
+    background-color: purple;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+
+#currentYear{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
