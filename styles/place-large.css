@@ -36,7 +36,7 @@
     .data{
         position: absolute;
         top: 20%;
-        left: 3%;
+        left: 12%;
         background-color: white;
         opacity: 0.9;
         padding-top: 7px;
@@ -45,7 +45,7 @@
     .weather{
         position: absolute;
         top: 20%;
-        right: 3%;
+        right: 12%;
         background-color: white;
         opacity: 0.9;
         padding-top: 7px;
