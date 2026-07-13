@@ -11,8 +11,11 @@
     }
 
     main{
-        display: flex;
+        display: flex-box;
+        position: relative;
     }
+    
+    .hero
 
     svg{
         position: relative;
@@ -20,7 +23,6 @@
         left: 15%;
         height: 50px;
     }
-
     
     .data h2,
     .weather h2{
@@ -35,8 +37,8 @@
 
     .data{
         position: absolute;
-        top: 20%;
-        left: 12%;
+        top: 5%;
+        left: 2%;
         background-color: white;
         opacity: 0.9;
         padding-top: 7px;
@@ -44,8 +46,8 @@
 
     .weather{
         position: absolute;
-        top: 20%;
-        right: 12%;
+        bottom: 5%;
+        right: 2%;
         background-color: white;
         opacity: 0.9;
         padding-top: 7px;
