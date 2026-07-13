@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jared Aldridge">
+    <title>Responsive images</title>
+</head>
+<body>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/london-temple-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/london-temple-medium.webp" media="(min-width: 500px)">
+                <img src="images/london-temple-small.webp" alt="London Temple" width="1500" height="750">
+            </picture>
+        </div>
+    </main>
+</body>
+</html>

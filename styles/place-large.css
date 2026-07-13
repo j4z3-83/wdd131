@@ -1,0 +1,57 @@
+@media screen and (min-width: 500px){
+
+    header, main, footer{
+    max-width: 1500px;
+    margin: 0rem auto;
+    }
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+
+    main{
+        display: flex;
+    }
+
+    svg{
+        position: relative;
+        top: -100%;
+        left: 15%;
+        height: 50px;
+    }
+
+    
+    .data h2,
+    .weather h2{
+        position: relative;        
+        left: -5%;
+        margin: 0;
+        margin-right: 25px;
+        background-color: var(--secondary-color);
+        text-align: left;
+        padding-left: 15px;   
+    }
+
+    .data{
+        position: absolute;
+        top: 20%;
+        left: 3%;
+        background-color: white;
+        opacity: 0.9;
+        padding-top: 7px;
+    }
+
+    .weather{
+        position: absolute;
+        top: 20%;
+        right: 3%;
+        background-color: white;
+        opacity: 0.9;
+        padding-top: 7px;
+    }
+    
+    footer{
+        text-align: center
+    };
+}
