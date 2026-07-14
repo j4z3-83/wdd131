@@ -22,7 +22,7 @@
         height: 50px;
     }
 
-    .weather-svg {
+    .bi-cloud-sun {
         display: none;
     }
     
@@ -62,5 +62,5 @@
     
     footer{
         text-align: center
-    };
+    }
 }
