@@ -14,14 +14,16 @@
         display: flex;
         position: relative;
     }
-    
-    .hero
 
     svg{
         position: relative;
         top: -100%;
         left: 15%;
         height: 50px;
+    }
+
+    .weather-svg {
+        display: none;
     }
     
     .data h2,
@@ -33,6 +35,11 @@
         background-color: var(--secondary-color);
         text-align: left;
         padding-left: 15px;   
+    }
+
+    .weather-head::after{
+        content: "⛅";
+        display: inline-block;
     }
 
     .data{
