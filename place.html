@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
-<body onload="calculateWindChill(26, 18)">
+<body onload=calculateWindChill()>
     <header>
         <h1>United Kingdom</h1>
     </header>
@@ -93,5 +93,8 @@
         <p><span id="currentYear"></span>, 🍁 Jared Aldridge, 🍁 Canada</p>
         <p id="lastModified"></p>
     </footer>
+    <script>
+        onload=calculateWindChill(document.getElementById("temperature").replace(/[^0-9.-]/g, ""), document.getElementById("windspeed").replace(/[^0-9.-]/g, ""))
+    </script>
 </body>
 </html>
