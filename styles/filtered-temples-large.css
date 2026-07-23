@@ -1,0 +1,36 @@
+@media screen and (min-width: 550px){
+    
+    /*header start*/
+    /*hide hamburger button*/
+    #menu{
+        display: none;
+    }
+
+    div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+    }
+
+    #page-title{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    nav ul{
+        grid-column: 2;
+        display: flex;
+        padding-left: 150px;
+    }
+
+    nav a{
+        display: block;
+    }
+    /*header end*/
+
+    /*main start*/
+    .images{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
