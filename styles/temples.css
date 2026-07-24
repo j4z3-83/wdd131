@@ -94,6 +94,7 @@ h1{
     grid-gap: 10px;
     place-items: center;
     text-align: center;
+    width: 400px;
 }
 
 img{

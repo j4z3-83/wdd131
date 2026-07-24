@@ -33,4 +33,12 @@
     .images{
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    .images section{
+        width: 100%;
+    }
+
+    img{
+        width: 90%;
+    }
 }
