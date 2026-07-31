@@ -6,7 +6,7 @@
     <meta name="author" content="Jared Aldridge">
     <meta name="reviewform" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-      content="Jared Aldridge, WDD131, Product review form">
+      content="Jared Aldridge, WDD131: Dynamic Web Fundamentals, Product review form">
     <title>WDD 131: Dynamic Web Fundamentals - Review Form Jared Aldridge</title>
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
@@ -19,7 +19,7 @@
 
   <main>
     <form method="get" action="review.html" class="pr1">
-      <fieldset>
+      
 
           <label>Product Name
             <select name="product" id="product" required>
@@ -49,12 +49,12 @@
           <label class="features"><input type="checkbox" id="features" name="performance" value="yes">Performance</label>
           <label class="features lastbox"><input type="checkbox" id="features" name="design" value="yes">Design</label>
 
-          <label id="written" name="writtenReview">Written Review<textarea></textarea></label>
+          <label>Written Review<textarea type="textarea" id="written" name="written"></textarea></label>
   
           <label>Your Name<input type="text" id="user" name="user"></label>
 
           <input type="submit" value="Post My Review">
-      </fieldset>
+      
     </form>
   </main> 
   
