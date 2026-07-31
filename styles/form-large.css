@@ -1,0 +1,22 @@
+@media screen and (min-width: 400px){
+
+
+body{
+    max-width: 600px;
+}
+
+.pr1 select,
+.pr1 input[type="date"],
+.pr1 input[type="textarea"],
+.pr1 input[type="text"],
+.pr1 input[type="submit"],
+.pr1 textarea
+{
+    width: 100%;
+    max-width: 600px;
+}
+
+footer{
+    width: 100%;
+    max-width: 577px;
+}
