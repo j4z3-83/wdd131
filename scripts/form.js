@@ -28,8 +28,6 @@ const products = [
 
 const dropdownMenu = document.getElementById("product");
 
-dropdownMenu.innerHTML = '<option value="">-- select an Option --</option>';
-
 products.forEach(product => {
     const option = document.createElement("option");
 
