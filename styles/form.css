@@ -27,7 +27,7 @@ main{
 }
 
 /*FORM STYLING*/
-.pr1 form{
+.pr1 fieldset{
     margin: 1rem 0 1rem 0  ;
     background-color: #faefff;
     border: 1px solid #d1bce3;
