@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+}
+
+/*body*/
+body{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 400px;
+}
+
+/*HEADER*/
+header{
+    padding: .5rem 2%;
+}
+header h1{
+    background-color: #6c457f;
+    color: white;
+    padding: 1rem;
+    margin-bottom: 0rem;
+    border-radius: 5px;
+}
+
+/*MAIN*/
+main{
+    padding: 0 2%;
+    min-height: 20rem;
+}
+
+/*FORM STYLING*/
+.pr1 fieldset{
+    margin: 2rem 2;
+    background-color: #faefff;
+    border: 1px solid #d1bce3;
+    border-radius: 5px;
+    padding: .5rem 2%;
+}
+.pr1 label{
+    padding-top: 1rem;
+    font-size: .9rem;
+}
+.pr1 div{
+    padding-top: 1rem;
+    font-size: .9rem;
+}
+
+.features{
+    display: block;    
+}
+
+.lastbox{
+    padding-bottom: 1rem;
+}
+
+.pr1 select,
+.pr1 input[type="date"],
+.pr1 input[type="textarea"],
+.pr1 input[type="text"],
+.pr1 textarea
+{
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    padding: .75rem;
+}
+
+.star-rating {
+  display: flex;
+
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  position: relative;
+  padding-bottom: 3.5rem;
+}
+
+.star-rating input[type="radio"] {
+  display: none;
+}
+
+.star-rating > label {
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  transition: 0.2s ease;
+  color: goldenrod;
+}
+
+.star-rating label:hover {
+  color: red;
+  transition: 0.2s ease;
+}
+
+.star-rating label::before {
+  content: '\2606';
+}
+.star-rating input:checked ~ label:before {
+  content:'\2605';
+}
+
+.pr1 textarea{
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    height: 150px;
+    resize: none;
+}
+
+/*FOOTER*/
+footer{
+    margin-left: 2%;
+    padding: .5rem 2%;
+    width: 100%;
+    max-width: 400px;
+    background-color: #6c457f;
+    color: white;
+    border-radius: 5PX;
+}

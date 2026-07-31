@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jared Aldridge">
+    <meta name="reviewform" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+      content="Jared Aldridge, WDD131, Product review form">
+    <title>WDD 131: Dynamic Web Fundamentals - Review Form Jared Aldridge</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Product Review</h1>
+  </header>
+
+  <main>
+    <form method="get" action="review.html" class="pr1">
+      <fieldset>
+
+          <label>Product Name
+            <select name="product" id="product" required>
+              <option value="">Choose a Product ... &#9662</option>            
+            </select>
+          </label>
+
+          <div>Overall Rating</div>
+          <div class="star-rating">
+            <input type="radio" name="stars" id="star1" value="5"/>
+            <label for="star1"></label>
+            <input type="radio" name="stars" id="star2" value="4"/>
+            <label for="star2"></label>
+            <input type="radio" name="stars" id="star3" value="3"/>
+            <label for="star3"></label>
+            <input type="radio" name="stars" id="star4" value="2"/>
+            <label for="star4"></label>
+            <input type="radio" name="stars" id="star5" value="1"/>
+            <label for="star5"></label>
+          </div>
+
+          <label>Date of Installation<input type="date" id="date" name="installedDate" required></label>
+
+          <div>Which features did you find useful in the product?<br><em>(Check all that apply)</em></div>
+          <label class="features"><input type="checkbox" id="features" name="durability" value="yes">Durability</label>
+          <label class="features"><input type="checkbox" id="features" name="easeOfUse" value="yes">Ease of Use</label>
+          <label class="features"><input type="checkbox" id="features" name="performance" value="yes">Performance</label>
+          <label class="features lastbox"><input type="checkbox" id="features" name="design" value="yes">Design</label>
+
+          <label id="written" name="writtenReview">Written Review<textarea></textarea></label>
+  
+          <label>Your Name<input type="text" id="user" name="user"></label>
+
+
+
+
+
+      </fieldset>
+    </form>
+  </main> 
+  
+  <footer>
+    <p><span id="currentYear"></span>, Jared Aldridge, Canada</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
