@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+
+/*body*/
+body{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 400px;
+}
+
+/*HEADER*/
+header{
+    padding: .5rem 2%;    
+}
+
+nav{
+    width: 100%;
+    background-color: #6c457f;
+    padding: .75rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    padding: .75rem;
+}
+a:hover {
+  color: #aaa;
+  transition: 0.2s ease;
+}
+
+/*MAIN*/
+
+/*FOOTER*/
+footer{
+    margin-left: 2%;
+    padding: .5rem 2%;
+    width: 100%;
+    max-width: 382px;
+    background-color: #6c457f;
+    color: white;
+    border-radius: 5PX;
+    margin-top: rem;
+}

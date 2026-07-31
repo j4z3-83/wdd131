@@ -17,7 +17,6 @@ header h1{
     background-color: #6c457f;
     color: white;
     padding: 1rem;
-    margin-bottom: 0rem;
     border-radius: 5px;
 }
 
@@ -29,7 +28,7 @@ main{
 
 /*FORM STYLING*/
 .pr1 fieldset{
-    margin: 2rem 2;
+    margin: 1rem 0 1rem 0  ;
     background-color: #faefff;
     border: 1px solid #d1bce3;
     border-radius: 5px;
@@ -56,12 +55,20 @@ main{
 .pr1 input[type="date"],
 .pr1 input[type="textarea"],
 .pr1 input[type="text"],
+.pr1 input[type="submit"],
 .pr1 textarea
 {
     display: block;
     width: 100%;
     max-width: 400px;
     padding: .75rem;
+    border-radius: 5px;
+}
+
+.pr1 input[type="submit"]{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    box-shadow: 1px 1px 4px #999;
 }
 
 .star-rating {
@@ -109,8 +116,9 @@ footer{
     margin-left: 2%;
     padding: .5rem 2%;
     width: 100%;
-    max-width: 400px;
+    max-width: 382px;
     background-color: #6c457f;
     color: white;
     border-radius: 5PX;
+    margin-top: rem;
 }
