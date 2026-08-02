@@ -19,7 +19,7 @@
   </header>
 
   <main>
-    <form method="get" action="review.html" class="pr1">
+    <form method="get" action="review.html" class="pr1" id="pr1Form">
       <fieldset>
         <label for="product">Product Name</label>
         <select name="product" id="product" required>
@@ -28,21 +28,21 @@
 
         <div>Overall Rating</div>
         <div class="star-rating">
-          <label for="star1"></label>
-          <input type="radio" name="stars" id="star1" value="5" required>
-          
-          <label for="star2"></label>
-          <input type="radio" name="stars" id="star2" value="4" required>
-          
-          <label for="star3"></label>
-          <input type="radio" name="stars" id="star3" value="3" required>
-          
-          <label for="star4"></label>
-          <input type="radio" name="stars" id="star4" value="2" required>
-          
-          <label for="star5"></label>
-          <input type="radio" name="stars" id="star5" value="1" required>
-        </div>
+      <input type="radio" name="stars" id="star1" value="5"/>
+      <label for="star1"></label>
+
+      <input type="radio" name="stars" id="star2" value="4"/>
+      <label for="star2"></label>
+  
+      <input type="radio" name="stars" id="star3" value="3"/>
+      <label for="star3"></label>
+  
+      <input type="radio" name="stars" id="star4" value="2"/>
+      <label for="star4"></label>
+  
+      <input type="radio" name="stars" id="star5" value="1"/>
+      <label for="star5"></label>
+</div>
 
         <label for="date">Date of Installation</label>
         <input type="date" id="date" name="installedDate" required>
@@ -60,10 +60,12 @@
         <input type="checkbox" id="design" name="design" value="yes">
         <label class="features lastbox" for="design">Design</label>
 
-        <label for="written">Written Review</label>
+        <label for="written">Written Review </label>
+        <label class="optional"><em>(optional)</em></label>
         <textarea id="written" name="written"></textarea>
 
-        <label for="user">Your Name</label>
+        <label for="user">Your Name </label>
+        <label class="optional"><em>(optional)</em></label>
         <input type="text" id="user" name="user">
 
         <input type="submit" value="Post My Review">

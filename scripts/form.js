@@ -37,8 +37,11 @@ products.forEach(product => {
     dropdownMenu.appendChild(option);
 })
 
-let reviewCount = localStorage.getItem('reviewPageCount') ? parseInt(localStorage.getItem('reviewPageCount')) : 0;
+const form = document.getElementById('pr1Form');
 
-reviewCount++;
+let count = Number(localStorage.getItem('formSubmitCount') || 0);
 
-localStorage.setItem('reviewPageCount', reviewCount);
+form.addEventListener('submit', function(event){
+  count++;
+  localStorage.setItem('formSubmitCount', count);
+});
