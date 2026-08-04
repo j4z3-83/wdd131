@@ -7,11 +7,16 @@
     <meta name="Gunpla Grades" content="width=device-width, initial-scale=1.0">
     <meta name="description"
       content="Jared Aldridge, WDD131, Project website Gunpla Grades">
-    <title>Gunpla Grades</title>
-    <link rel="stylesheet" href="styles/small.css">
-        <link rel="stylesheet" href="styles/medium.css">
+    <title>Gundam Grades</title>
+    
+    <link rel="stylesheet" href="styles/main-small.css">
+    <link rel="stylesheet" href="styles/main-medium.css">
+    <link rel="stylesheet" href="styles/main-large.css">
+    
     <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/gundamgrades.js" defer></script>
+    <script src="scripts/menubutton.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -19,22 +24,66 @@
 </head>
 <body>
     <header>            
-        <div>
-            <span id="page-logo"><img src="images/logo.png" alt=""></span>
+        <div class="head">
+            <span id="page-logo"><img src="images/logo2.png" alt=""></span>
             <button id="menu" aria-label="Menu"></button>
-            <nav>
+            <nav id="navigation">
                 <ul class="navigation">
                     <li><a href="highgrade.html">High Grade</a></li>
                     <li><a href="#">Real Grade</a></li>
                     <li><a href="#">Master Grade</a></li>
                     <li><a href="#">Perfect Grade</a></li>
+                    <li><a href="#">Super Deformed</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <img src="images/rx78.jpg" alt="">        
+        <div class="landing">
+            <picture class="hero1">
+                <source srcset="images/hero1-small.jpg" media="(max-width: 649px)">
+                <source srcset="images/hero1-large.jpg">
+                <img src="images/hero1-large.jpg" alt="Gundams">
+            </picture>
+            
+            <form method="get" action="thanks.html" class="gg1" id="gg1Form">
+                <h1>Join the Guild</h1>
+                
+                <fieldset>
+                    <legend>Your Information</legend>
+                    <label for="name">Your Name </label>
+                    <input type="text" id="name" name="name" required>
+                    <label>email</label>
+                    <input type="email" name="email" placeholder="someone@gmail.com" required>
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob">
+                    <label for="grade">Gundam Grade of Interest</label>
+                    <select name="grade" id="grade">
+                    <option value="" disabled selected>▼...Select a grade ...</option>            
+                    </select>
 
+                    <legend>Your Collection</legend>
+                    <div>Do you collect Gundam</div>
+                    <label><input type="radio" name="collector" value="yes">Yes</label>
+                    <label><input type="radio" name="collector" value="no">No</label>
+
+                    <div>Grades Owned</div>
+                    <label><input type="checkbox" name="high" value="yes">High Grade</label>
+                    <label><input type="checkbox" name="real" value="yes">Real Grade</label>
+                    <label><input type="checkbox" name="master" value="yes">Master Grade</label>
+                    <label><input type="checkbox" name="perfect" value="yes">Perfect Grade</label>
+                    <label><input type="checkbox" name="sd" value="yes">Super Deformed</label>
+
+                    <input type="submit" value="Join the Guild">
+                </fieldset>
+            </form>
+
+            <picture class="hero2">
+                <source srcset="images/hero2-small.jpg" media="(max-width: 649px)">
+                <source srcset="images/hero2-large.jpg">
+                <img src="images/hero2-large.jpg" alt="Gundams">
+            </picture>
+        </div>
     </main>
     <footer>
         <p><span id="currentYear"></span>, Jared Aldridge, Canada</p>

@@ -1,0 +1,45 @@
+const imageWrapper = document.querySelector('.image-wrapper');
+const imageItems = document.querySelectorAll('.image-wrapper > *');
+const imageLength = imageItems.length;
+let perView = 0;
+let totalScroll = 0;
+const delay = 2000;
+
+function updateVariable() {
+  const width = window.innerWidth;
+  
+  if (width < 600) {
+    perView = 1;
+  } else if (width <= 1024) {
+    perView = 2;
+  } else {
+    perView = 3;
+  }
+}
+
+updateVariable();
+
+window.addEventListener("resize", updateVariable);
+
+
+imageWrapper.style.setProperty('--per-view', perView);
+for(let i = 0; i < perView; i++) {
+  imageWrapper.insertAdjacentHTML('beforeend', imageItems[i].outerHTML)
+};
+
+let autoScroll = setInterval(scrolling, delay);
+
+function scrolling() {
+  totalScroll++
+  if(totalScroll == imageLength + 1) {
+    clearInterval(autoScroll)
+    totalScroll = 1
+    imageWrapper.style.transition = '0s'
+    imageWrapper.style.left = '0'
+    autoScroll = setInterval(scrolling, delay)
+  };
+  const widthEl = document.querySelector('.image-wrapper > :first-child').offsetWidth + 24
+  imageWrapper.style.left = `-${totalScroll * widthEl}px`
+  imageWrapper.style.transition = '.3s'
+};
+

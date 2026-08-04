@@ -1,0 +1,244 @@
+:root{
+    --primary-color: #a70d07;
+    --secondary-color: #014597;
+    --accent-color: #cdb125;
+    --text-color1: #ffffff;
+    --text-color2: #000000;
+    font-family: "Roboto", sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*---HEADER---*/
+
+header{
+    display: flex;
+    align-items: end;
+    width: 100%;
+    min-width: 300px;
+    max-width: 1920px;
+}
+
+#page-logo img{
+    height: 75px;
+    width: auto;
+}
+
+/*---SMALL VIEW NAVIGATION---*/
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: var(--primary-color);
+ 	position: absolute;
+    right: 0;
+    top: 2%;
+    padding-right: 10px;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❎";
+}
+
+nav ul{
+    align-items: center;
+    justify-content: right;
+    list-style-type: none;
+}
+
+nav a{
+display: none;
+padding: .5rem;
+text-align: center;
+text-decoration: none;
+color: var(--primary-color);
+font-weight: 700;
+}
+
+a:hover{
+    color: var(--accent-color);
+    font-size: 1.5rem;
+}
+
+.open a {
+	display: block;
+}
+/*---END HEADER---*/
+
+/*---MAIN HOMEPAGE---*/
+main{ 
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing { 
+    flex-wrap: wrap;
+}
+
+.hero1 > img {
+    width: 100%;
+    max-width: 1920px;
+}
+
+.hero2 > img {
+    width: 100%;
+    max-width: 1920px;
+}
+
+/*---FORM STYLING---*/
+.gg1 h1{
+    color: var(--text-color2);
+    width: 96%;
+    margin: 0 2% -2rem 2%;
+}
+
+.gg1 form{
+
+    max-width: 400px;
+    border-radius: 10px;
+    height: 900px;
+    padding: 10px;
+}
+
+.gg1 fieldset{
+    background-color: #ccc;
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: .5rem 1%;
+    max-width: 400px;
+}
+
+.gg1 legend{
+    color: var(--text-color2);
+    padding: 0 .5rem;
+    margin-top: 1rem;
+}
+
+.gg1 label{
+    display: block;
+    color: var(--text-color2);
+    padding-top: 1rem;
+    font-size: .9rem;
+}
+
+.gg1 div{
+    color: var(--text-color2);
+    padding-top: 1rem;
+    font-size: .9rem;
+}
+
+.gg1 input[type="text"],
+.gg1 input[type="email"],
+.gg1 input[type="date"],
+.gg1 select{
+    background-color: #eee;
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: .75rem;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.gg1 input[type="radio"],
+.gg1 input[type="checkbox"]{
+    margin: 6px;
+}
+
+.gg1 input[type="submit"]{
+    border: none;
+    background-image: linear-gradient(var(--primary-color), #000,  
+    var(--secondary-color));
+    color: #fff;
+    border-radius: 5px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: 1rem 2% 1rem 2%;
+    box-shadow: 1px 1px 4px #999;
+}
+
+.gg1 input:required{
+    border-bottom: solid 8px red;
+}
+
+.gg1 input:required:valid{
+    border-bottom: solid 8px green;
+}
+/*---FORM STYLING---*/
+
+/*---MAIN THANKS PAGE---*/
+.thanks {
+    display: grid;
+    width: 100%;
+    max-width: 1920px;
+}
+
+.welcome{
+    background-color: var(--primary-color);
+    color: var(--text-color1);
+    text-align: center;
+    align-content: center;
+}
+
+.thumbs img{
+    width: 100%;
+}
+
+/*---GRADE PAGES---*/
+
+/*---MAIN---*/
+.grade { 
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* IMAGE */
+.image-container {
+    overflow-x: hidden;
+    max-width: 1800px;
+}
+.image-wrapper {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% - (1.5rem * (var(--per-view) - 1))) / var(--per-view));
+    grid-gap: 1.5rem;
+    position: relative;
+    left: 0;
+    transition: .3s;
+}
+.image-wrapper > * {
+    aspect-ratio: 4 / 3;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: .5rem;
+}
+/* IMAGE */
+
+
+/*---FOOTER---*/
+footer{
+    background-color: var(--secondary-color);
+    color: var(--text-color1);
+    padding: 1rem;
+    max-width: 1920px;
+
+}

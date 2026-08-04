@@ -1,0 +1,125 @@
+@media screen and (min-width: 1024px){
+
+    /*---BODY---*/
+    body {
+        max-width: 1900px;
+    }
+    
+    /*---HEADER---*/
+    header {
+        width: 100%;
+        display: flex;
+    }
+
+    /*hide hamburger button*/
+
+    #menu {
+        display: none;
+    }
+
+    .head {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        justify-content: end;
+    }
+
+    #page-logo {
+        grid-column: 1 / 2;
+        grid-row: 1;
+    }
+
+    #navigation {
+        grid-column: 3 / 4;
+    }
+
+    /*---MAIN HOMEPAGE---*/
+    main {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .landing {
+        flex-wrap: wrap;
+    }
+
+    .hero1 img{
+        max-width: 1500px;
+    }
+
+    /*---FORM STYLING---*/
+    .gg1 h1 {
+        font-size: 1.5rem;
+    }
+
+    form {
+        max-width: 384px;
+    }
+
+    .gg1 fieldset {
+        max-width: 384px;
+    }
+
+    .gg1 legend {
+        margin: 1rem 2% 0 2%;
+    }
+
+    .gg1 label {
+        display: block;
+        color: var(--text-color2);
+        padding-top: 1rem;
+        font-size: .9rem;
+    }
+
+    .gg1 div {
+        margin: 0 2% 0 2%;
+    }
+
+    .gg1 input[type="text"],
+    .gg1 input[type="email"],
+    .gg1 input[type="date"],
+    .gg1 select {
+        padding: .25rem;
+        margin: 0 2% 0 2%;
+        width: 96%;
+        max-width: 384px;
+    }
+
+    .gg1 input[type="radio"],
+    .gg1 input[type="checkbox"] {
+        margin: 6px;
+    }
+
+    .gg1 input[type="submit"] {
+        padding: .25rem;
+        max-width: 384px;
+    }
+    /*---FORM STYLING---*/
+
+    /*---MAIN THANKS PAGE---*/
+    .welcome {
+        grid-column: span 5;
+        align-content: center;
+        background-color: var(--primary-color);
+        color: var(--text-color1);
+        text-align: center;
+        height: 50px;
+    }
+
+    .thumbs {
+        grid-column: span 5;
+        width: 100%;
+        height: auto;
+    }
+
+    /*---FOOTER---*/
+    footer {
+        background-color: var(--secondary-color);
+        color: var(--text-color1);
+        padding: 1rem;
+        max-width: 1920px;
+    }  
+}
