@@ -93,7 +93,7 @@ main{
 }
 
 /*---FORM STYLING---*/
-.gg1 form{
+form{
     max-width: 400px;
     border-radius: 10px;
     height: 900px;
@@ -194,9 +194,14 @@ main{
     width: 100%;
 }
 /*---GRADE PAGES---*/
+main {
+    background-color: var(--primary-color);
+}
 
 table {
     margin: auto;
+    color: var(--text-color1);
+
 }
 
 table, th, td {
@@ -205,6 +210,7 @@ table, th, td {
 
 .blurb p {
     margin: 3% 10px 3% 10px;
+    color: var(--text-color1);
 }
 
 /* IMAGE */
