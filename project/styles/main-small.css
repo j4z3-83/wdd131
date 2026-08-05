@@ -93,18 +93,18 @@ main{
 }
 
 /*---FORM STYLING---*/
-.gg1 h1{
-    color: var(--text-color2);
-    width: 96%;
-    margin: 0 2% -2rem 2%;
-}
-
 .gg1 form{
-
     max-width: 400px;
     border-radius: 10px;
     height: 900px;
     padding: 10px;
+    background-color: #ccc;
+}
+
+.gg1 h1{
+    color: var(--text-color2);
+    width: 96%;
+    margin: 0 2% -2rem 2%;
 }
 
 .gg1 fieldset{
